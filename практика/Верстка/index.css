@@ -1,0 +1,543 @@
+/* Сброс стилей для обнуления стандартных стилей браузера */
+
+/* Улучшение доступности и семантики элементов */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+
+/* Удаление маргинальных пробелов для некоторых элементов */
+body {
+  line-height: 1;
+   font-family: 'Montserrat', sans-serif;
+   height: 100vh; /* Задаем высоту всего окна просмотра (viewport height) */
+  display: flex;
+  flex-direction: column;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* Ссылки без стандартного подчеркивания и синего цвета */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Улучшение доступности для ссылок при наведении */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Подготовка контейнера для центрирования содержимого */
+.container {
+  max-width: 1200px; /* Максимальная ширина контейнера */
+  margin: 0 auto; /* Центрирование контейнера по горизонтали */
+  }
+/* Общий стиль для заголовков */
+
+/* Общий стиль для абзацев */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-content: center; /* Располагаем содержимое по центру по горизонтали */
+  background: var(--background-dark, #0C0B3C);
+text-align: center;
+}
+
+
+#logo {
+  width: 180px;
+height: 40px;
+flex-shrink: 0;
+}
+
+header {
+  display: inline-block;
+width: 1200px;
+justify-content: space-between;
+height: 40px;
+
+
+
+
+}
+.language-switcher {
+  display: inline-block ;
+}
+
+.language-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  text-decoration: none;
+   color: var(--secondary-black, #6B7280);
+  position: relative;
+}
+
+.language-button.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Регулирует положение подчеркивания */
+  width: 100%;
+  height: 2px;
+  color: var(--primary-50, #F6F5FC) !important;
+  background-color:  var(--primary-50, #F6F5FC);
+  
+}
+
+.language-button:hover {
+  text-decoration: underline;
+  border: none;
+
+}
+  .link {
+  text-align: right;
+  color: var(--primary-50, #F6F5FC);
+  
+} 
+.link a{
+  margin-right: 60px;
+  font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;
+}
+
+.one{
+  height: 100%;
+  }
+
+  .contant {
+    display: inline-block;
+    max-width: 1200px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(2px);
+
+margin-top:80px ;
+
+justify-content: space-between;
+
+  }
+
+
+  main h1 {
+    color: var(--gray-50, #F9FAFB);
+margin: 0;
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: 60px; /* 150% */
+letter-spacing: 0.8px;
+text-align: left;
+padding-top: 40px;
+padding-left: 40px;
+
+  }
+
+  main p{
+    color: var(--primary-50, #F6F5FC);
+    margin: 0;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 140% */
+letter-spacing: 0.4px;
+text-align: left;
+padding: 0 0 0 40px ;
+  }
+
+ main button{
+    color: var(--primary-50, #F6F5FC);
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.72px;
+border-radius: 8px;
+background: var(--primary, #4B2EC8);
+
+
+
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+padding: 14px 24px;
+width:542px ;
+cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+border: none; /* Убираем границу кнопки */
+transition: background-color 0.7s;
+margin-bottom: 40px;
+  }
+
+  main button:hover {
+  background-color: #ccc; /* Изменяем цвет фона кнопки при наведении */
+
+}
+
+.contant img{
+  margin-top: 64px;
+  margin-bottom: 64px;
+  width: 90%;
+  padding:40px;
+}
+  
+ .contant2 h1 {
+    color: var(--gray-50, #F9FAFB);
+margin: 0;
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: 60px; /* 150% */
+letter-spacing: 0.8px;
+text-align: left;
+  }
+
+  .contant2 p{
+    color: var(--primary-50, #F6F5FC);
+    margin: 0;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 140% */
+letter-spacing: 0.4px;
+text-align: left;
+  }
+
+ .contant2 button{
+    color: var(--primary-50, #F6F5FC);
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.72px;
+border-radius: 8px;
+background: var(--primary, #4B2EC8);
+
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+padding: 14px 24px;
+width:542px ;
+cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+border: none; /* Убираем границу кнопки */
+transition: background-color 0.7s;
+  }
+
+  .contant2 button:hover {
+  background-color: #ccc; /* Изменяем цвет фона кнопки при наведении */
+
+}
+.contant3 h1 {
+    color: var(--gray-50, #F9FAFB);
+margin: 0;
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: 60px; /* 150% */
+letter-spacing: 0.8px;
+text-align: left;
+  }
+
+  .contant3 p{
+    color: var(--primary-50, #F6F5FC);
+    margin: 0;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px; /* 140% */
+letter-spacing: 0.4px;
+text-align: left;
+  }
+
+ .contant3 button{
+    color: var(--primary-50, #F6F5FC);
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.72px;
+border-radius: 8px;
+background: var(--primary, #4B2EC8);
+
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+padding: 14px 24px;
+width:542px ;
+cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+border: none; /* Убираем границу кнопки */
+transition: background-color 0.7s;
+  }
+
+  .contant3 button:hover {
+  background-color: #ccc; /* Изменяем цвет фона кнопки при наведении */
+
+}
+.contant2 {
+    display: inline-block;
+   
+    height: 440px;
+    width: 90%;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(2px);
+padding: 24px;
+
+
+}
+
+.contant3 {
+    display: inline-block;
+    width: 90%;
+    height: 440px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(2px);
+
+padding: 24px;
+
+}
+.tabl {
+  margin-top: 20px;
+}
+
+.tabl tr{
+  max-width: 1200px;
+  margin: 0;
+}
+.tabl th{
+  width: 600px;
+  margin: 0;
+}
+.tabl button {
+   position: absolute; /* Позиционируем кнопку абсолютно */
+  bottom: 24px; /* Отступ от нижнего края */
+  left: 50%; /* Выравниваем кнопку по центру горизонтали */
+  transform: translateX(-50%); /* Центрируем кнопку */
+}
+.form th{
+  width: 600px;
+  margin: 0;
+  padding-top: 74px;
+}
+
+.form{
+  display: inline-block;
+  max-width: 1200px;
+  height: 500px;
+  position: relative;
+  top: 250px;
+  border-radius: 10px;
+background: #FFF;
+/* card */
+box-shadow: 1px 4px 20px 0px rgba(187, 184, 199, 0.24);
+margin-top:   -150px;
+}
+
+
+.input-form {
+  position: relative;
+  width: 83%; /* Ширина формы (можно настроить под свои нужды) */
+ 
+  z-index: 1;
+  text-align: left;
+}
+
+.input-form div {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.input-form input,
+.input-form textarea {
+  width: 100%;
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.input-form textarea {
+  resize: vertical;
+}
+
+.input-form label {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  pointer-events: none;
+}
+
+.input-form input:focus,
+.input-form textarea:focus {
+  outline: none;
+  border-bottom-color: #007bff;
+}
+
+.input-form input::placeholder,
+.input-form textarea::placeholder {
+ color: rgba(134, 135, 137, 0.40);
+
+
+font-size: 14px;
+font-style: normal;
+font-weight: 200;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.28px;
+}
+
+.file-input-wrapper {
+  position: absolute;
+  overflow: hidden;
+  top: -40px;
+  right: -95%;
+
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  height:  50px;
+  width: 50px;
+}
+.file-input-wrapper img {
+
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.file-label img {
+  width: 20px;
+  height: 20px;}
+
+  body > div > table.form > tbody > tr > th:nth-child(2) > form > div:nth-child(5) > input[type=submit] {
+
+color: var(--primary-50, #F6F5FC);
+text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.72px;
+border-radius: 8px;
+background: var(--primary, #4B2EC8);
+
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+padding: 14px 24px;
+width:155px ;
+cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+border: none; /* Убираем границу кнопки */
+transition: background-color 0.7s;
+
+  }
+  body > div > table.form > tbody > tr > th:nth-child(2) > form > div:nth-child(5){
+    text-align:   right ;
+  }
+  body > div > table.form > tbody > tr > th:nth-child(2) > form > div:nth-child(4) > p{
+    position:   absolute  ;
+    top:  30px;
+    color: var(--secondary-black, #6B7280);
+text-align: left;
+font-size: 10px;
+font-style: normal;
+font-weight: 300;
+line-height: 14px; /* 140% */
+letter-spacing: 0.4px;
+  }
+  .texx h1 {
+    color: var(--primary-black, #2F2F2F);
+
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+  }
+  .texx {
+    position: relative;
+    padding-left: 80px;
+    top: -74px;
+  }
+.texx p{
+  color: var(--secondary-black, #6B7280);
+
+width: 380px;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.36px;
+}
+.texx span{
+  color: var(--primary, #4B2EC8);
+}
+
+footer{
+  position: relative;
+  background: var(--primary, #4B2EC8);
+  text-align: center;
+  z-index: -100;
+   flex: 1; /* Занимает всю доступную высоту на странице */
+  display: flex;
+  flex-direction: column;
+  height: 496px;
+}
+.links {
+  padding-top: 290px;
+}
+.links a{
+  color: #FFF;
+margin-right: 40px;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 24px; /* 150% */
+}
+.social {
+  margin-top:  24px;
+}
+.social a{
+  margin-right: 38px;
+}
+footer p{
+  color: #FFF;
+margin-top: 32px;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+}
